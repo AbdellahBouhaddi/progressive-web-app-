@@ -20,13 +20,13 @@ export default function Home({ exploreData }) {
       {/*the banner  */}
       {/*the main section   */}
 
-      <main className="max-w-5xl mx-10 md:px-16 sm:px-10">
-        <sectin className="pt-6 ">
+      <main className="max-w-7xl mx-10 md:px-16 sm:px-10">
+        <section className="pt-6 ">
           <h2 className="text-4xl font-semibold pb-5 ">Some informations</h2>
           {/*aficher qlq information   */}
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
-            {exploreData?.map((img, distance, location) => (
+          <div className="grid grid-cols-1 mx-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
+            {exploreData?.map(({ img, distance, location }) => (
               <SmallCard
                 key={img}
                 img={img}
@@ -35,10 +35,10 @@ export default function Home({ exploreData }) {
               />
             ))}
           </div>
-        </sectin>
+        </section>
 
         <section>
-          <h2>live anywere</h2>
+          <h2 className=" text-4xl font-semibold py-8">live anywere</h2>
         </section>
       </main>
     </div>
