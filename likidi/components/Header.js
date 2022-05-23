@@ -22,7 +22,7 @@ function header() {
       </div>
 
       {/*middle */}
-      <div className="flex item-center md:border-2 rounded-full py-0.5 md:shadow-sm ">
+      <div className=" flex item-center md:border-2 rounded-full py-0.5 md:shadow-sm ">
         <input
           className="flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400"
           type="text"
@@ -35,10 +35,13 @@ function header() {
       </div>
 
       {/* right */}
-      <div className="flex items-center space-x-4  justify-end text-gray-500">
+      <div className="hidden sm:flex items-center space-x-4  justify-end text-gray-500">
         <p className=" hidden md:inline  cursor-pointer">Becom a Host</p>
-        <GlobeAltIcon className=" h-6   cursor-pointer" />
-        <div className="flex items-center spasce-x-4 border-2 rounded-full">
+
+        <div className="flex items-center spasce-x-4  rounded-full  justify-end">
+          <GlobeAltIcon className=" h-6   cursor-pointer" />
+        </div>
+        <div className="flex items-center spasce-x-4 border-2 rounded-full  justify-end">
           <MenuIcon className=" h-6   cursor-pointer" />
           <UserCircleIcon className=" h-6   cursor-pointer" />
         </div>
